@@ -68,7 +68,7 @@ firebase.database().ref().on("child_added", function (childSnapShot) {
     var tMinUntil = tFrequency - tRemainder;
     var nextTrain = moment().add(tMinUntil, "minutes").format("hh:mm");
 
-   // $("tbody").append("<tr><td>" + tName + "</td><td>" + tDest + "</td><td>" + tFreq + "</td><td>" + nextTrain + "</td><td>" + tminUntil + "</td></tr>");
+   $("tbody").append("<tr><td>" + tName + "</td><td>" + tDest + "</td><td>" + tFreq + "</td><td>" + nextTrain + "</td><td>" + tminUntil + "</td></tr>");
 
 
    $("#train-table > tbody").append("<tr><td>" + tName + "</td><td>" +
